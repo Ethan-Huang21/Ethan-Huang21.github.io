@@ -1,0 +1,135 @@
+/**************************/
+/* NAVIGATION */
+/**************************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  /* auto transition using max-width */
+  transition: all 0.3s;
+  width: auto;
+  max-width: 8rem;
+
+  /* Border */
+  background-color: #333;
+  border: 3px solid #FFF;
+  border-radius: 12px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+
+  /* Position it absolutely in the top left corner */
+  position: fixed;
+  padding: 1.8rem;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+}
+
+.main-nav-list.active {
+  max-width: 250rem;
+}
+
+.main-nav-link {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-decoration: none;
+  flex-basis: 300px;
+
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+
+.main-nav-list.active .main-nav-link {
+  grid-template-columns: 1fr 3fr;
+  gap: 1.8rem;
+}
+
+.nav-link-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  flex-shrink: 0;
+  color: #FFF;
+}
+
+.nav-link-text {
+  /* display: none; */
+  display: inline-block;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  /* Render it absolute */
+  /* Note: Maybe a better way to do this.. */
+  position: absolute;
+  top: -500px;
+  left: -500px;
+}
+
+.main-nav-list.active .nav-link-text {
+  /* On active, render it static */
+  position: static;
+  opacity: 1;
+  margin-right: 0.8rem;
+  justify-self: right;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #333;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active,
+.nav-social-btn:hover,
+.nav-social-btn:active {
+  color: #cf711f;
+  box-shadow: 0 0 0 0.2rem #FFF;
+}
+
+.nav-socials {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-social {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  margin-left: 1.2rem;
+  justify-content: space-between;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main-nav-list.active .main-nav-social {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.main-nav-social {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: #FFF;
+}
