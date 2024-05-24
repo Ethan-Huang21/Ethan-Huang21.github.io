@@ -41,7 +41,7 @@
   flex-basis: 300px;
 
   border-radius: 8px;
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .main-nav-list.active .main-nav-link {
@@ -76,8 +76,9 @@
   /* On active, render it static */
   position: static;
   opacity: 1;
-  margin-right: 0.8rem;
-  justify-self: right;
+  padding-right: 0.8rem;
+  margin-left: auto;
+  /* justify-self: right; */
 }
 
 .main-nav-link:link,

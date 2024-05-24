@@ -1,0 +1,51 @@
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+
+.section-hero {
+  /* background-color: #fdf2e9; */
+  height: 100svh;
+  padding: 8rem 0 9.6rem 0;
+  background-image: url("../imgs/pexels-jpg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+
+.hero-text-box {
+    grid-column: 2;
+    /* background-color: orangered; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.hero-text-box h1 {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.hero-description {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+    margin-left: auto;
+}
+
+/**************************/
+/* ABOUT SECTION */
+/**************************/
+.section-about {
+    /* Color Picker */
+    background-color: #000;
+    color: #FFF;
+}

@@ -1,69 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="The portfolio website designed for and by Ethan Huang, a student from the University of Calgary."
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="The portfolio website designed for and by Ethan Huang, a student from the University of Calgary."
+  />
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule=""
+    src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+  ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/general.css" />
+  <link rel="stylesheet" href="../css/sidebar.css" />
+  <link rel="stylesheet" href="../css/hero.css" />
 
-    <link rel="stylesheet" href="../css/general.css" />
-    <link rel="stylesheet" href="../css/sidebar.css" />
+  <script defer src="../js/script.js"></script>
 
-    <script defer src="../js/script.js"></script>
-
-    <title>Ethan Huang</title>
+  <title>Ethan Huang</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="main-nav">
-            <ul class="main-nav-list">
-                <li>
-                    <a class="main-nav-link" href="#">
-                      <ion-icon class="icon nav-link-icon" name="home-outline"></ion-icon>
-                      <span class="nav-link-text">Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="main-nav-link" href="#">
-                      <ion-icon class="icon nav-link-icon" name="person-circle-outline"></ion-icon>
-                      <span class="nav-link-text">About Me</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="main-nav-link" href="#">
-                      <ion-icon class="icon nav-link-icon" name="folder-outline"></ion-icon>
-                      <span class="nav-link-text">Portfolio</span>
-                    </a>
-                </li>
-                <li class="nav-socials">
-                    <a class="nav-social-btn" href="#">
-                      <ion-icon class="icon nav-link-icon" name="share-social-outline"></ion-icon>
-                    </a>
-                    <div class="main-nav-social">
-                      <a class="nav-social-btn" href="#">
-                        <ion-icon class="social-icon" name="logo-github"></ion-icon>
-                      </a>
-                      <a class="nav-social-btn" href="#">
-                          <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
-                      </a>
-                      <a class="nav-social-btn" href="#">
-                        <ion-icon class="social-icon" name="mail-outline"></ion-icon>
-                      </a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link" href="#">
+            <ion-icon class="icon nav-link-icon" name="home-outline"></ion-icon>
+            <span class="nav-link-text">Home</span>
+          </a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="#">
+            <ion-icon class="icon nav-link-icon" name="person-circle-outline"></ion-icon>
+            <span class="nav-link-text">About Me</span>
+          </a>
+        </li>
+        <li>
+          <a class="main-nav-link" href="#">
+            <ion-icon class="icon nav-link-icon" name="folder-outline"></ion-icon>
+            <span class="nav-link-text">Projects</span>
+          </a>
+        </li>
+        <li class="nav-socials">
+          <a class="nav-social-btn" href="#">
+            <ion-icon class="icon nav-link-icon" name="share-social-outline"></ion-icon>
+          </a>
+          <div class="main-nav-social">
+            <a class="nav-social-btn" href="#">
+              <ion-icon class="social-icon" name="logo-github"></ion-icon>
+            </a>
+            <a class="nav-social-btn" href="#">
+                <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="nav-social-btn" href="#">
+              <ion-icon class="social-icon" name="mail-outline"></ion-icon>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="hero grid grid--2-cols">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">Ethan Huang</h1>
+          <p class="hero-description">
+            To-Be Graduate Student, Hobbyist Developer
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-about">
+      <div class="container grid grid--2-cols">
+        <div class="about-text-box">
+          <h2 class="heading-secondary">About Me</h2>
+          <p class="about-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, possimus magni quod quam deserunt eos atque voluptates voluptas aperiam et enim doloremque eaque perspiciatis totam accusamus nostrum explicabo tempore nulla!
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
