@@ -94,7 +94,10 @@
   display: flex;
   background-color: rgba(20, 20, 20, 0.50);
   border-radius: 18px;
-  padding: 3.2rem;
+  padding: 2.8rem 2.4rem;
+  gap: 1.8rem;
+
+  overflow: hidden;
 }
 
 .about-text-box {
@@ -108,28 +111,62 @@
   margin-bottom: 4.8rem;
 }
 
-.a-btn {
-  
+.about-contact-box {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.about-contact-icons {
+  display: flex;
+  gap: 1.8rem;
+  padding: 1.2rem;
+  border-radius: 18px;
+  /* border: 2px solid #fffeee; */
+
+  z-index: 2;
 }
 
 .about-img-box {
   display: flex;
-  gap: 1.8rem;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.about-img-box::before,
+.about-img-box::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.about-img-box::before {
+  top: 0%;
+  right: 0%;
+  transform: translate(0%, -15%);
+  width: 25rem;
+  height: 25rem;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.about-img-box::after {
+  bottom: 0%;
+  left: 0%;
+  transform: translate(-15%, 15%);
+  width: 25rem;
+  height: 25rem;
+  background-color: rgba(255, 249, 140, 0.65);
+  z-index: 1;
 }
 
 .about-img {
   width: 75%;
   transform: scaleX(-1);
   border-radius: 200px;
-}
-
-.about-contact-icons {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  padding: 0.8rem;
-  border-radius: 18px;
-  border: 2px solid #fffeee;
+  box-shadow: 0 1.2rem 1.8rem rgba(0, 0, 0, 0.25);
+  z-index: 5;
 }
