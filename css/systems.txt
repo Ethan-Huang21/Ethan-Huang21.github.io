@@ -23,10 +23,11 @@ Large: 1.8
 
 --- 02 COLORS
 
-- Primary: #e67e22
+- Primary: #fffa8c
 - Tints:
-#fdf2e9
-#fae5d3
+#fffeee
+#fffdc7
+#fff978
 #eb984e
 
 - Shades: 

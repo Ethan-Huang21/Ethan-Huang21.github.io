@@ -16,7 +16,8 @@
   padding: 0 3.2rem;
   margin: 0 auto;
   align-items: center;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr auto;
+  gap: 0;
   /* background-color: aquamarine; */
 }
 
@@ -25,12 +26,28 @@
   /* background-color: orangered; */
   display: flex;
   flex-direction: column;
-  justify-content: left;
 }
 
-.hero-text-box h1 {
-  display: inline-block;
+.hero-text-box .heading-kicker {
   margin-left: auto;
+  color: #fffdc7;
+  background-color: #000;
+  padding: 0 0.2rem;
+  margin-top: auto;
+  border-radius: 3px;
+}
+
+.hero-text-box .heading-tertiary {
+  margin-left: auto;
+}
+
+.hero-text-box .heading-primary {
+  display: inline-block;
+  color: #fffa8c;
+  background-color: #000;
+  padding: 1.2rem 0.4rem;
+  margin-left: auto;
+  border-radius: 4px;
 }
 
 .hero-description {
@@ -38,6 +55,10 @@
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 4.8rem;
+}
+
+.h-btn {
+  grid-column: 2;
   margin-left: auto;
 }
 
@@ -49,7 +70,7 @@
       184deg,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 1) 20%,
-      rgba(125, 8, 207, 0.7490456321022727) 55%,
+      rgba(255, 250, 140, 0.45) 55%,
       rgba(0, 0, 0, 1) 75%,
       rgba(0, 0, 0, 1) 100%
     ),

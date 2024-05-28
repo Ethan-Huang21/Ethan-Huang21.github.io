@@ -16,7 +16,7 @@
 
   /* Border */
   background-color: #333;
-  border: 3px solid #FFF;
+  border: 3px solid #fffa8c;
   border-radius: 12px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 
@@ -53,16 +53,17 @@
   height: 3.2rem;
   width: 3.2rem;
   flex-shrink: 0;
-  color: #FFF;
+  color: #fffeee;
+  transition: all 0.2s;
 }
 
 .nav-link-text {
   /* display: none; */
   display: inline-block;
-  color: #FFF;
+  color: #fffeee;
   font-weight: 500;
   font-size: 1.8rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 0;
 
   /* Render it absolute */
@@ -91,7 +92,22 @@
 .nav-social-btn:hover,
 .nav-social-btn:active {
   color: #cf711f;
-  box-shadow: 0 0 0 0.2rem #FFF;
+  box-shadow: 0 0 0 0.2rem #fffeee;
+}
+
+/* Text + Icons */
+.main-nav-link:hover .nav-link-icon,
+.main-nav-link:active .nav-link-icon,
+.main-nav-link:hover .nav-link-text,
+.main-nav-link:active .nav-link-text {
+  color: #fffa8c;
+}
+
+/* Social Icons */
+.nav-social-btn:hover .nav-link-icon,
+.nav-social-btn:active .nav-link-icon,
+.nav-social-btn:hover .social-icon {
+  color: #fffa8c;
 }
 
 .nav-socials {
@@ -132,5 +148,7 @@
 .social-icon {
   height: 2.8rem;
   width: 2.8rem;
-  color: #FFF;
+  color: #fffeee;
+
+  transition: all 0.3s;
 }
