@@ -28,10 +28,8 @@ Large: 1.8
 #fffeee
 #fffdc7
 #fff978
-#eb984e
 
 - Shades: 
-#cf711f
 #45260a
 
 - Accents:

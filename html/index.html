@@ -27,7 +27,14 @@
     <link rel="stylesheet" href="../css/hero.css" />
 
     <script defer src="../js/script.js"></script>
-
+    <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+      <defs>
+        <filter id="marker-shape">
+          <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+        </filter>
+      </defs>
+    </svg>
     <title>Ethan Huang</title>
   </head>
   <body>
@@ -53,7 +60,7 @@
             </a>
           </li>
           <li>
-            <a class="main-nav-link" href="#">
+            <a class="main-nav-link" href="#project">
               <ion-icon
                 class="icon nav-link-icon"
                 name="folder-outline"
@@ -62,7 +69,7 @@
             </a>
           </li>
           <li class="nav-socials">
-            <a class="nav-social-btn" href="#">
+            <a class="nav-social-btn" href="#footer">
               <ion-icon
                 class="icon nav-link-icon"
                 name="share-social-outline"
@@ -89,7 +96,7 @@
           <div class="hero-text-box">
             <h4 class="heading-kicker">Home</h4>
             <h3 class="heading-tertiary">Hello! I am</h3>
-            <h1 class="heading-primary">Ethan Huang</h1>
+            <h1 class="heading-primary mark_b">Ethan Huang</h1>
             <p class="hero-description">
               A To-Be Graduate Student, Hobbyist Developer
             </p>
@@ -100,8 +107,10 @@
       </section>
       <section class="section-about" id="about">
         <div class="about container grid grid--2-cols">
-          <h4 class="heading-kicker a_kicker">About</h4>
-          <h2 class="heading-secondary a_secondary">Who I Am</h2>
+          <div class="grid-heading">
+            <h4 class="heading-kicker">About</h4>
+            <h2 class="heading-secondary main-font-color">Who I Am</h2>
+          </div>
           <div class="about-box">
             <div class="about-text-box">
               <p class="about-description">
@@ -111,14 +120,14 @@
                 I hope to further improve upon my toolkit so that my first steps into the industry are as smooth
                 as possible!
               </p>
-              <div class="about-contact-box">
-                <a href=mailto:"ethan.huang21@hotmail.com" target="_blank" class="btn a-btn btn--dark">
+              <div class="contact-box">
+                <a href=mailto:"ethan.huang21@hotmail.com" target="_blank" class="btn btn--dark">
                   <div class="hflex-center">
                     <ion-icon class="btn-icon" name="mail-outline"></ion-icon>
                     <span>Let's Talk</span>
                   </div>
                 </a>
-                <div class="about-contact-icons">
+                <div class="contact-icons">
                   <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
                     <ion-icon class="social-icon" name="logo-github"></ion-icon>
                   </a>
@@ -134,9 +143,137 @@
           </div>
         </div>
       </section>
-      <section class="section-projects">
-        <div class="container"></div>
+      <section class="section-projects" id="project">
+        <div class="project container grid grid--2-cols">
+          <div class="grid-heading grid-center">
+            <h4 class="heading-kicker a_kicker">Showcase</h4>
+            <h2 class="heading-secondary main-font-color">Portfolio</h2>
+          </div>
+          <div class="p--img-box">
+            <img class="p-img" src="../imgs/pholder.jpg" alt="Sample1"/>
+          </div>
+          <div class="p--desc-box">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">Sample 1</h3>
+              <p class="project-description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti illum laborum quae eius excepturi cum temporibus nisi possimus, laudantium consectetur beatae quod sapiente saepe quis </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://www.linkedin.com/in/ethhcpsc/" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p--desc-box">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">Sample 2</h3>
+              <p class="project-description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti illum laborum quae eius excepturi cum temporibus nisi possimus, laudantium consectetur beatae quod sapiente saepe quis </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://www.linkedin.com/in/ethhcpsc/" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p--img-box">
+            <img class="p-img" src="../imgs/pholder.jpg" alt="Sample1"/>
+          </div>
+          <div class="p--img-box">
+            <img class="p-img" src="../imgs/pholder.jpg" alt="Sample1"/>
+          </div>
+          <div class="p--desc-box">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">Sample 3</h3>
+              <p class="project-description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti illum laborum quae eius excepturi cum temporibus nisi possimus, laudantium consectetur beatae quod sapiente saepe quis </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://www.linkedin.com/in/ethhcpsc/" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p--desc-box">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">Sample 4</h3>
+              <p class="project-description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti illum laborum quae eius excepturi cum temporibus nisi possimus, laudantium consectetur beatae quod sapiente saepe quis </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://www.linkedin.com/in/ethhcpsc/" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p--img-box">
+            <img class="p-img" src="../imgs/pholder.jpg" alt="Sample1"/>
+          </div>
+          <div class="p--img-box">
+            <img class="p-img" src="../imgs/pholder.jpg" alt="Sample1"/>
+          </div>
+          <div class="p--desc-box p--last">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">Sample 5</h3>
+              <p class="project-description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti illum laborum quae eius excepturi cum temporibus nisi possimus, laudantium consectetur beatae quod sapiente saepe quis </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://www.linkedin.com/in/ethhcpsc/" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-heading grid-center">
+            <a href="https://github.com/Ethan-Huang21?tab=repositories" target="_blank" class="btn btn--dark">
+              <div class="hflex-center">
+                <ion-icon class="btn-icon" name="logo-github"></ion-icon>
+                <span>All Projects</span>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer class="footer" id="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-column">
+          <span class="logo">E.H</span>
+        </div>
+        <div class="main-column">
+          <p class="footer-heading">Media</p>
+          <div class="contact-icons">
+            <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
+              <ion-icon class="social-icon" name="logo-github"></ion-icon>
+            </a>
+            <a class="nav-social-btn" href="https://www.linkedin.com/in/ethhcpsc/" target="_blank">
+              <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="nav-social-btn" href=mailto:"ethan.huang21@hotmail.com">
+              <ion-icon class="social-icon" name="mail-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <nav class="nav-column">
+          <p class="footer-heading">Navigation</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Back to Top</a></li>
+            <li><a class="footer-link" href="#about">About Me</a></li>
+            <li><a class="footer-link" href="#project">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
