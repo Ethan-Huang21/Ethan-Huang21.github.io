@@ -14,6 +14,7 @@
   max-width: 130rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+  margin-top: 8.8rem;
   align-items: center;
   grid-template-columns: 1fr auto;
   gap: 0;
@@ -83,7 +84,7 @@
 .about-box {
   grid-column: 1/ -1;
   display: flex;
-  background-color: rgba(20, 20, 20, 0.50);
+  background-color: rgba(20, 20, 20, 0.5);
   border-radius: 18px;
   padding: 2.8rem 2.4rem;
   gap: 1.8rem;
@@ -102,7 +103,7 @@
   margin-bottom: 4.8rem;
 }
 
-.about-contact-box {
+.contact-box {
   display: flex;
   gap: 1.8rem;
 }
@@ -162,12 +163,11 @@
   z-index: 5;
 }
 
-
 /**************************/
 /* PROJECTS SECTION */
 /**************************/
 .section-projects {
-  background:#000;
+  background: #000;
   /* height: 100rem; */
   padding: 9.6rem 0;
   color: #fffeee;
@@ -189,7 +189,6 @@
   flex-direction: column;
   gap: 1.8rem;
 }
-
 
 .project-description {
   font-size: 1.6rem;

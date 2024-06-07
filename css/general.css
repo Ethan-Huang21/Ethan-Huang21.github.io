@@ -36,7 +36,7 @@ ion-icon {
 .grid {
   display: grid;
   column-gap: 6.4rem;
-  row-gap: 8.0rem;
+  row-gap: 8rem;
 
   /* margin-bottom: 9.6rem; */
 }
@@ -79,7 +79,7 @@ ion-icon {
 .heading-primary {
   font-size: 8.6rem;
   line-height: 1.05;
-  margin-bottom: 4.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
@@ -114,7 +114,6 @@ ion-icon {
   letter-spacing: 0.75px;
 }
 
-
 .inline-element {
   display: inline-block;
 }
@@ -143,7 +142,7 @@ ion-icon {
 .btn--light:link,
 .btn--light:visited {
   background-color: #111;
-  color: #FFF;
+  color: #fff;
 }
 
 .btn--light:hover,
