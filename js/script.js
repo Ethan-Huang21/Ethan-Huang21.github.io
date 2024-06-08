@@ -18,37 +18,22 @@ navlist.addEventListener("click", function () {
 
 ///////////////////////////////////////////////////////////
 // Smooth Scrolling Animation
-const allLinks = document.querySelectorAll('a:link');
-console.log(allLinks);
+// REF: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 
-allLinks.forEach(function(link) {
-  link.addEventListener('click', function(e) {
-    console.log(e);
-    /* To skip the default .html stuff we did */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
     e.preventDefault();
-    const href = link.getAttribute('href');
-    console.log(href);
-
-    // scroll back to top
-    // this doesn't always work in safari either
-    // We copy the pkg link below in a <script src="link"></script> in our HTML file
-    // This should fix it
-    if (href === "#") window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-
-
-    // scroll to other links
-    if (href !== "#" && href.startsWith('#')) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({behavior: "smooth"});
+    if (this.getAttribute("href") === "#") {
+      // Scroll to the top of the page
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      // Scroll to the target element
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+      });
     }
-
-    // Close mobile navigation if it's open
-    // if (link.classList.contains('main-nav-link')) {
-    //   // toggle -- remove if it exists, add if it doesnt
-    //   headerEl.classList.toggle("nav-open");
-    // }
   });
 });
