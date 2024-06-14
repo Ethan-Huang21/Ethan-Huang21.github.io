@@ -214,3 +214,77 @@ ion-icon {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+
+  align-self: center;
+  justify-self: center;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.p--img-box {
+  display: flex;
+  width: 100%;
+}
+
+.p-img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.c-controls {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-nav-btn {
+  background: none;
+  color: #333;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.c-nav-btn:hover {
+  color: #000;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.indicators span {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.indicators .active {
+  color: #717171;
+}

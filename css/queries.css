@@ -124,15 +124,15 @@
     grid-row: 5;
   }
 
-  .p-img {
+  /* .p-img {
     width: 90%;
-  }
+  } */
 
-  .p--img-box {
+  /* .p--img-box {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   .project-description {
     text-align: center;
@@ -177,7 +177,6 @@
     /* 7px / 16px = 0.44 = 44% */
     font-size: 44%;
   }
-  
 }
 
 /**************************/
