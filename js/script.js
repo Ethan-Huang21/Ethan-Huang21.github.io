@@ -53,7 +53,7 @@ function initializeCarousel(carousel) {
   // Current slide index for this carousel
   let currentSlide = 0;
   // Select all image slides within this carousel
-  const slides = carousel.querySelectorAll(".p-img");
+  const slides = carousel.querySelectorAll(".p--img-box picture");
   // Total number of slides
   const totalSlides = slides.length;
   // Select the carousel-inner container for this carousel
