@@ -1,11 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://repo.github.io/html/index.html">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The portfolio website designed for and by Ethan Huang, a student from the University of Calgary."
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <script defer src="./js/script.js"></script>
+    <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+      <defs>
+        <filter id="marker-shape">
+          <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+        </filter>
+      </defs>
+    </svg>
     
-</body>
+    <title>Ethan Huang</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#">
+              <ion-icon
+                class="icon nav-link-icon"
+                name="home-outline"
+              ></ion-icon>
+              <span class="nav-link-text">Home</span>
+            </a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#about">
+              <ion-icon
+                class="icon nav-link-icon"
+                name="person-circle-outline"
+              ></ion-icon>
+              <span class="nav-link-text">About Me</span>
+            </a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#project">
+              <ion-icon
+                class="icon nav-link-icon"
+                name="folder-outline"
+              ></ion-icon>
+              <span class="nav-link-text">Projects</span>
+            </a>
+          </li>
+          <li class="nav-socials">
+            <a class="nav-social-btn" href="#footer">
+              <ion-icon
+                class="icon nav-link-icon"
+                name="share-social-outline"
+              ></ion-icon>
+            </a>
+            <div class="main-nav-social">
+              <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
+                <ion-icon class="social-icon" name="logo-github"></ion-icon>
+              </a>
+              <a class="nav-social-btn" href="https://www.linkedin.com/in/ethhcpsc/" target="_blank">
+                <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+              </a>
+              <a class="nav-social-btn" href=mailto:"ethan.huang21@hotmail.com">
+                <ion-icon class="social-icon" name="mail-outline"></ion-icon>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero grid grid--2-cols">
+          <div class="hero-text-box">
+            <h4 class="heading-kicker">Home</h4>
+            <h3 class="heading-tertiary">Hello! I am</h3>
+            <h1 class="heading-primary mark_b">Ethan Huang</h1>
+            <p class="hero-description">
+              A To-Be Graduate Student, Hobbyist Developer
+            </p>
+          </div>
+          <!-- ../files/Resume2023.pdf -->
+          <a href="./files/Resume2024.pdf" target="_blank" class="btn h-btn btn--light">View My Resume &rarr;</a>
+        </div>
+      </section>
+      <section class="section-about" id="about">
+        <div class="about container grid grid--2-cols">
+          <div class="grid-heading">
+            <h4 class="heading-kicker">About</h4>
+            <h2 class="heading-secondary main-font-color">Who I Am</h2>
+          </div>
+          <div class="about-box">
+            <div class="about-text-box">
+              <p class="about-description">
+                I'm an adaptable, fast-learning individual that's keen to pick up and refine
+                industry-level skills. While I've studied various fields, I've yet to truly specialize my knowledge-set.
+                With a Bachelors in Computer Science and further pursuits within the general tech sphere,
+                I hope to further improve upon my toolkit so that my first steps into the industry are as smooth
+                as possible!
+              </p>
+              <div class="contact-box">
+                <a href=mailto:"ethan.huang21@hotmail.com" target="_blank" class="btn btn--dark">
+                  <div class="hflex-center">
+                    <ion-icon class="btn-icon" name="mail-outline"></ion-icon>
+                    <span>Let's Talk</span>
+                  </div>
+                </a>
+                <div class="contact-icons">
+                  <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
+                    <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                  </a>
+                  <a class="nav-social-btn" href="https://www.linkedin.com/in/ethhcpsc/" target="_blank">
+                    <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="about-img-box">
+              <img class="about-img" src="./imgs/picture.jpg" alt="A picture of Ethan Huang"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-projects" id="project">
+        <div class="project container grid grid--2-cols">
+          <div class="grid-heading grid-center">
+            <h4 class="heading-kicker a_kicker">Showcase</h4>
+            <h2 class="heading-secondary main-font-color">Portfolio</h2>
+          </div>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="p--img-box">
+                <picture>
+                  <source srcset="./imgs/project/youchat1.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/youchat1.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/youchat1.jpg"
+                    class="p-img"
+                    alt="Picture of YouChat's Chat Interface, showing previous messages"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./imgs/project/youchat2.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/youchat2.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/youchat2.jpg"
+                    class="p-img"
+                    alt="Picture of YouChat's Chat Interface, showing the drop-down menu option to reset username"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./imgs/project/youchat3.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/youchat3.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/youchat3.jpg"
+                    class="p-img"
+                    alt="Picture of YouChat's Pocketbase Backend of User Messages"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="c-controls">
+              <button class="prev c-nav-btn" onclick="moveSlide(-1)">&#10094;</button>
+              <div class="indicators">
+                <!-- Generated by JavaScript -->
+              </div>
+              <button class="next c-nav-btn" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+          </div>
+          <div class="p--desc-box">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">YouChat</h3>
+              <div class="lang-container">
+                <i class="devicon-react-original"></i>
+                <i class="devicon-nodejs-plain"></i>
+                <i class="devicon-go-original-wordmark"></i>
+                <i class="devicon-sqlite-plain"></i>
+              </div>
+              <p class="project-description">
+                A distributed Chat Application designed to exhibit fault tolerance and synchronization across multiple Pocketbase databases. 
+                Utilizes leader election and a FIFO queue with acknowledgments to ensure synchronization.
+                Failure is masked in the event of replica, leader, and middleware failures.
+              </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/Ethan-Huang21/DS_ChatApp" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://youtu.be/Gh_qcyTE4Jg" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p--desc-box">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">Autocotrans</h3>
+              <div class="lang-container">
+                <i class="devicon-python-plain"></i>
+                <i class="devicon-selenium-original"></i>
+              </div>
+              <p class="project-description">
+                A Python script that utilizes the Selenium library to webscrape Cotrans to simplify mass file-upload and download. 
+                Utilizes a headless chrome browser to automate the entire translation process, keeping everything in the background.
+              </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/Ethan-Huang21/Auto-Cotrans" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://youtu.be/9b8fTfoQY3I" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="p--img-box">
+                <picture>
+                  <source srcset="./imgs/project/autocotrans1.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/autocotrans1.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/autocotrans1.jpg"
+                    class="p-img"
+                    alt="A picture of the Autocotrans in-progress script alongside the files it creates in a source folder."
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <div class="c-controls">
+              <button class="prev c-nav-btn" onclick="moveSlide(-1)">&#10094;</button>
+              <div class="indicators">
+                <!-- Generated by JavaScript -->
+              </div>
+              <button class="next c-nav-btn" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+          </div>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="p--img-box">
+                <picture>
+                  <source srcset="./imgs/project/ogl1.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/ogl1.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/ogl1.jpg"
+                    class="p-img"
+                    alt="A picture of a curve in the OpenGL Demo's curve editor"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./imgs/project/ogl2.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/ogl2.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/ogl2.jpg"
+                    class="p-img"
+                    alt="A picture of a cylindrical wireframe model in the OpenGL Demo's model viewer"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./imgs/project/ogl3.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/ogl3.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/ogl3.jpg"
+                    class="p-img"
+                    alt="A picture of a bezier surface within the surface viewer of the OpenGL Demo project"
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <div class="c-controls">
+              <button class="prev c-nav-btn" onclick="moveSlide(-1)">&#10094;</button>
+              <div class="indicators">
+                <!-- Generated by JavaScript -->
+              </div>
+              <button class="next c-nav-btn" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+          </div>
+          <div class="p--desc-box">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">OpenGL Demo</h3>
+              <div class="lang-container">
+                <i class="devicon-cplusplus-plain"></i>
+                <i class="devicon-opengl-plain"></i>
+              </div>
+              <p class="project-description">
+                An interactive project that utilizes the C++ OpenGL Library to create and visualize Bezier and B-Spline curves. 
+                From these created curves, a 3D Model can be created and interacted with through camera movements.
+                Lastly, a 3D Bezier Surface viewer that demonstrates other modes of visualization within computer graphics.
+              </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/Ethan-Huang21/453-OpenGL-Demo" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://youtu.be/ROcKkE2dsRw" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p--desc-box">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">Python Basics</h3>
+              <div class="lang-container">
+                <i class="devicon-unity-plain"></i>
+                <i class="devicon-csharp-plain"></i>
+              </div>
+              <p class="project-description">
+                A project created within the Unity Engine over the course of 24 hours for a Hackathon. 
+                The game is a simple 3D Puzzle Platformer designed to teach Python terminology, syntax, and semantics. 
+                Awarded first place within the beginners stream that was competed in.
+              </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/KaitoSugimura/HackYourLearning" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://www.youtube.com/watch?v=mWL9KU680SY" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="p--img-box">
+                <picture>
+                  <source srcset="./imgs/project/pb1.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/pb1.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/pb1.jpg"
+                    class="p-img"
+                    alt="A picture of Python Basic's platforming level, with a ramp and moving platforms"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./imgs/project/pb2.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/pb2.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/pb2.jpg"
+                    class="p-img"
+                    alt="An example of Python Basic's puzzle aspect"
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <div class="c-controls">
+              <button class="prev c-nav-btn" onclick="moveSlide(-1)">&#10094;</button>
+              <div class="indicators">
+                <!-- Generated by JavaScript -->
+              </div>
+              <button class="next c-nav-btn" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+          </div>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="p--img-box">
+                <picture>
+                  <source srcset="./imgs/project/omni1.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/omni1.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/omni1.jpg"
+                    class="p-img"
+                    alt="Picture of YouChat's Chat Interface, showing the drop-down menu option to reset username"
+                  />
+                </picture>
+                <picture>
+                  <source srcset="./imgs/project/omni2.webp" type="image/webp"/>
+                  <source srcset="./imgs/project/omni2.jpg" type="image/jpg"/>
+                  <img
+                    src="./imgs/project/omni2.jpg"
+                    class="p-img"
+                    alt="Picture of YouChat's Chat Interface, showing the drop-down menu option to reset username"
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <div class="c-controls">
+              <button class="prev c-nav-btn" onclick="moveSlide(-1)">&#10094;</button>
+              <div class="indicators">
+                <!-- Generated by JavaScript -->
+              </div>
+              <button class="next c-nav-btn" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+          </div>
+          <div class="p--desc-box p--last">
+            <div class="desc-box">
+              <h3 class="heading-tertiary tint-font-color">Omnifood</h3>
+              <div class="lang-container">
+                <i class="devicon-html5-plain"></i>
+                <i class="devicon-css3-plain"></i>
+                <i class="devicon-javascript-plain"></i>
+              </div>
+              <p class="project-description">
+                A project done following alongside Jonas Schmedtmann for a UDemy course based around the fundamentals of HTML and CSS.
+                The website is designed to be responsive through design and media queries, ensuring that it's operable across different devices. 
+              </p>
+              <div class="contact-icons">
+                <a class="nav-social-btn" href="https://github.com/Ethan-Huang21/UDWebDesign" target="_blank">
+                  <ion-icon class="social-icon" name="logo-github"></ion-icon>
+                </a>
+                <a class="nav-social-btn" href="https://youtu.be/lEUIsp9ETWo" target="_blank">
+                  <ion-icon class="social-icon" name="logo-youtube"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-heading grid-center">
+            <a href="https://github.com/Ethan-Huang21?tab=repositories" target="_blank" class="btn btn--dark">
+              <div class="hflex-center">
+                <ion-icon class="btn-icon" name="logo-github"></ion-icon>
+                <span>All Projects</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-column">
+          <span class="logo">E.H</span>
+        </div>
+        <div class="main-column">
+          <p class="footer-heading">Media</p>
+          <div class="contact-icons">
+            <a class="nav-social-btn" href="https://github.com/Ethan-Huang21" target="_blank">
+              <ion-icon class="social-icon" name="logo-github"></ion-icon>
+            </a>
+            <a class="nav-social-btn" href="https://www.linkedin.com/in/ethhcpsc/" target="_blank">
+              <ion-icon class="social-icon" name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="nav-social-btn" href=mailto:"ethan.huang21@hotmail.com">
+              <ion-icon class="social-icon" name="mail-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <nav class="nav-column">
+          <p class="footer-heading">Navigation</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Back to Top</a></li>
+            <li><a class="footer-link" href="#about">About Me</a></li>
+            <li><a class="footer-link" href="#project">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
