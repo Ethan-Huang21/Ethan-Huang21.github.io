@@ -108,20 +108,16 @@
     margin-bottom: 4.8rem;
   }
 
-  .p--img-box:nth-child(2) {
+  .carousel:nth-child(2) {
     grid-row: 2;
   }
 
-  .p--img-box:nth-child(5) {
+  .carousel:nth-child(5) {
     grid-row: 4;
   }
 
-  .p--img-box:nth-child(9) {
+  .carousel:nth-child(9) {
     grid-row: 8;
-  }
-
-  .step-img-box:nth-child(6) {
-    grid-row: 5;
   }
 
   /* .p-img {
